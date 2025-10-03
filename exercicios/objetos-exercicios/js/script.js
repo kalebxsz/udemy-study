@@ -15,10 +15,16 @@ function recebeEventoForm (evento) {
     // console.log(sobrenome.value)
     // console.log(peso.value)
     // console.log(altura.value)
-  
-
+    pessoas.push({nome: nome.value, sobrenome: sobrenome.value, peso: peso.value, altura: altura.value})
+    
+    console.log(pessoas)
 }
 form.addEventListener('submit', recebeEventoForm)
+
+resultado.innerHTML += `<p> ${nome.value} ${sobrenome.value} ${peso.value} ${altura.value}</p>`
+
+}
+myForm();
 
 
 /* form.onsubmit = function(evento) {
@@ -26,5 +32,3 @@ form.addEventListener('submit', recebeEventoForm)
     alert(1);
     console.log('foi enviado') 
 }*/
-}
-myForm();
