@@ -11,9 +11,8 @@ const pessoa = {
     nome: 'kaleb',
     sobrenome: 'Canabarro',
     age: 23
-}
-console.log(pessoa.nome, pessoa.sobrenome, pessoa.age )
+};
 
-// for (let i in pessoa){
-//     console.log(i)
-// }
+for (let chave in pessoa){
+    console.log(chave, pessoa[chave])
+}

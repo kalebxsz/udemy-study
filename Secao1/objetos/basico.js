@@ -31,7 +31,7 @@ pessoa1.fala();
  */
 
 
-/* function createUser (nome, sobrenome, age){
+function createUser (nome, sobrenome, age){
     return {nome, sobrenome, age}
 }
 
@@ -48,7 +48,7 @@ console.log(pessoa3)
 console.log(pessoa4)
 console.log(pessoa5)
 console.log(pessoa6)
- */
+ 
 
 
 
