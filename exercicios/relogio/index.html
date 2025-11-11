@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Timer</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <main class="container">
+    <header>
+      <h1 class="title">Timer</h1>
+      <p class="subtitle">Configure, inicie e controle — o JavaScript é por sua conta.</p>
+    </header>
+
+    <section class="timer-card" aria-label="Timer">
+      <div class="inputs">
+        <label>
+          Min
+          <input type="number" min="0" max="999" value="0" id="input-min" data-timer-input="min" />
+        </label>
+        <span class="colon">:</span>
+        <label>
+          Seg
+          <input type="number" min="0" max="59" value="30" id="input-sec" data-timer-input="sec" />
+        </label>
+      </div>
+
+      <div class="display" id="timer-display" role="timer" aria-live="polite">
+        <span class="digits">00:30</span>
+      </div>
+
+      <div class="controls">
+        <button id="start-btn" class="btn primary" data-action="start" type="button">Iniciar</button>
+        <button id="pause-btn" class="btn" data-action="pause" type="button">Pausar</button>
+        <button id="reset-btn" class="btn" data-action="reset" type="button">Reset</button>
+      </div>
+
+      <div class="progress-wrap" aria-hidden="true">
+        <div class="progress" id="timer-progress"></div>
+      </div>
+    </section>
+
+    <footer class="note">
+      <small>Sem JavaScript incluído — pronto para você implementar lógica de contagem, pausa e animação.</small>
+    </footer>
+  </main>
+</body>
+</html>
