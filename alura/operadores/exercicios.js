@@ -1,43 +1,19 @@
 // Crie variáveis que armazenem o valor do saldo, de depósito e de um saque de uma conta bancária, depois realize operações de adição e subtração entre eles utilizando uma variável chamada operacao, considerando a função de cada variável criada anteriormente. Exiba os resultados finais no console.
 
-let saldo = 0;
+let saldo = 500;
 let deposito = 0;
-let saque = 0;
+let saque = 120;
 
-let operação = null;
+let operacao = saldo - saque;
 
-
-function depositar(deposito,saldo){
-    if (deposito + saldo){
-        return saldo += deposito
-    }
-}
-// console.log(depositar(deposito, saldo));
-
-
-function sacar(saldo, saque){
-    if (saldo - saque){
-        return saldo -= saque
-    }
-}
-
-
-if (depositar(deposito, saldo) >= 101){
-    console.log("ESTAMOS COM O PATACO")
-}else if (sacar(saldo, saque) <= 100){
-    console.log("TAMO DURO");
-    
-}else {
-    console.log("SOU CLT");
-    
-}
+console.log(operacao);
 
 
 
 
 // Crie uma variável numérica com um valor. Utilize um operador ternário para verificar se esse valor é par ou ímpar. Exiba o resultado no console.
 
-let valor = 10;
+let valor = 10;                                                                                                     
 let texto = valor % 2 === 0 ? 'PAR' : 'IMPAR'
 console.log(texto)
 

@@ -10,5 +10,3 @@ console.log(`A média do aluno foi ${media.toFixed(2)}`);
 
 // UM ARRAY É UMA LISTA DE ITENS QUE INICIAM SEMPRE POR 0 E VÃO AO INIFINITO 
 
-let array = ['oi', 16, {a:b}, true, 10]
-console.log(array[0]);
