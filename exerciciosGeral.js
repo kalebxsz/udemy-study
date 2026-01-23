@@ -148,7 +148,7 @@ console.log(operacao); */
 
 
 
-let filaDeUsuarios = {};
+let filaDeUsuarios = [];
 
 console.log(filaDeUsuarios);
 
@@ -162,4 +162,4 @@ console.log(filaDeUsuarios);
 
 user('rubi', 'rubi@admin.com', 19);
 
-console.log(filaDeUsuarios);
+console.log(filaDeUsuarios.slice(3, 6));
