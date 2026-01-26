@@ -147,7 +147,7 @@ console.log(operacao); */
 // em uma operação matematica, a multiplicação sempre é executada antes 
 
 
-
+/* 
 let filaDeUsuarios = [];
 
 console.log(filaDeUsuarios);
@@ -162,4 +162,6 @@ console.log(filaDeUsuarios);
 
 user('rubi', 'rubi@admin.com', 19);
 
-console.log(filaDeUsuarios.slice(3, 6));
+console.log(filaDeUsuarios.slice(3, 6)); */
+
+
