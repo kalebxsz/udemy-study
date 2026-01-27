@@ -19,8 +19,11 @@ EXERCÍCIO 1 — Função básica
 Crie uma função somar(a, b) que retorne a soma de dois números.
 */
 function somar(a, b) {
+   return a + b
    
 }
+let resultado = somar(20, 10)
+console.log(resultado);
 
 /*
 EXERCÍCIO 2 — Condicional
@@ -29,16 +32,29 @@ Crie uma função verificarIdade(idade) que:
 - retorne "maior de idade" se idade >= 18
 */
 function verificarIdade(idade) {
-  // seu código aqui
+  if (idade < 18){
+    return `Você não tem 18 anos ainda, portanto é menor de idade.`
+  }else {
+    return `Você já é maior de idade`
+    
+  }
 }
+
+console.log(verificarIdade(21));
+
 
 /*
 EXERCÍCIO 3 — Loop
 Crie uma função criarLista(n) que retorne um array com números de 1 até n.
 */
-function criarLista(n) {
-  // seu código aqui
+let lista = [];
+function criarArray (n) {
+  for (let i = 0; i < n; i++ ){
+    lista.push(i)    
+    }
 }
+criarArray(10);
+console.log(lista);
 
 /*
 -----------------------------------------------------
@@ -51,11 +67,17 @@ EXERCÍCIO 4 — Objeto
 Dado o objeto abaixo, crie uma função que retorne:
 "Ana tem 25 anos"
 */
-const usuario = { nome: 'Ana', idade: 25 };
 
-function descreverUsuario(usuario) {
-  // seu código aqui
+const usuario = {  };
+
+function descreverUsuario(nome, idade) {
+
+  return `${nome} tem ${idade} anos`
+  
 }
+
+console.log(descreverUsuario('Kaleb', 23));
+
 
 /*
 EXERCÍCIO 5 — Percorrer array
@@ -63,10 +85,17 @@ Dado o array abaixo, crie uma função que retorne a soma dos números.
 NÃO usar reduce.
 */
 const numeros = [2, 4, 6, 8];
-
+let total = 0
 function somarNumeros(numeros) {
-  // seu código aqui
+  
+  for(let numero of numeros) {
+  total += numero
 }
+return total
+  
+}
+console.log(somarNumeros(numeros));
+
 
 /*
 EXERCÍCIO 6 — Filtrar dados
@@ -79,8 +108,10 @@ const usuarios = [
 ];
 
 function filtrarUsuariosAtivos(usuarios) {
-  // seu código aqui
+  const usuarioAtivo = usuarios.filter(usuarios => usuarios.ativo !== false)
+  return usuarioAtivo
 }
+console.log(filtrarUsuariosAtivos(usuarios));
 
 /*
 -----------------------------------------------------
@@ -94,8 +125,20 @@ Crie a função processar(valor, callback)
 Ela deve chamar o callback passando valor * 2
 */
 function processar(valor, callback) {
-  // seu código aqui
-}
+  
+  callback(valor * 2);
+   }
+
+   function metadeValor(resultado){
+
+    console.log(resultado);
+    
+   }
+processar(15,metadeValor);
+   
+   
+
+
 
 /*
 EXERCÍCIO 8 — Simular atraso
@@ -105,8 +148,13 @@ Ela deve:
 - chamar o callback com "dados carregados"
 */
 function buscarDados(callback) {
-  // seu código aqui
-}
+    setTimeout(() => {
+    callback("dados carregados");
+  }, 2000)}
+
+  buscarDados(function(mensagem) {
+  console.log(mensagem);
+});
 
 /*
 -----------------------------------------------------
